@@ -1,0 +1,50 @@
+body{
+  background-color: #777;
+}
+.game-board{
+  width: 740px;
+  height: 416px;
+  background-color: #fff;
+  overflow: hidden;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
+  position: absolute;
+  margin: auto;
+  background-image: url('images/mario-bg.gif');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mario{
+  height: 124px;
+  width: 100px;
+  background-image:url('images/mario-run.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+.jump {
+  -webkit-animation-name: jump; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: jump;
+  animation-duration: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes jump {
+  0% {bottom: 0;}
+  50% {bottom: 50px;}
+  100% {bottom: 0;}
+}
+
+/* Standard syntax */
+@keyframes jump {
+  0% {bottom: 0;}
+  50% {bottom: 50px;}
+  100% {bottom: 0;}
+}
